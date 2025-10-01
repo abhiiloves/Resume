@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhanu Sharma | Resume</title>
+    <style>
+        :root {
+            --primary: #3a7bd5;
+            --secondary: #00d2ff;
+            --accent: #f7b733;
+            --bg: #f9fafc;
+            --text: #222;
+            --card-bg: #fff;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, var(--primary) 0%, var(--secondary) 100%);
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+        }
+        .container {
+            max-width: 900px;
+            margin: 48px auto;
+            background: var(--card-bg);
+            border-radius: 18px;
+            box-shadow: 0 6px 32px rgba(58,123,213,0.10);
+            padding: 40px 36px 32px 36px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            border-bottom: 2px solid #e6eaf0;
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(58,123,213,0.12);
+        }
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .header-info {
+            flex: 1;
+        }
+        h1 {
+            margin: 0 0 8px 0;
+            font-size: 2.5rem;
+            color: var(--primary);
+            letter-spacing: 1px;
+        }
+        .role {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            font-size: 1rem;
+            color: #555;
+        }
+        .contact a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        section {
+            margin-bottom: 32px;
+        }
+        h2 {
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 10px;
+        }
+        .summary {
+            font-size: 1.08rem;
+            color: #444;
+            background: #f3f8fd;
+            border-left: 4px solid var(--primary);
+            padding: 16px 18px;
+            border-radius: 8px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skills-list li {
+            background: linear-gradient(90deg, var(--primary) 60%, var(--secondary));
+            color: #fff;
+            padding: 7px 18px;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: 500;
+            box-shadow: 0 1px 4px rgba(58,123,213,0.08);
+        }
+        .exp-card {
+            background: #f7fbff;
+            border-left: 4px solid var(--primary);
+            border-radius: 8px;
+            margin-bottom: 18px;
+            padding: 18px 20px 10px 20px;
+            box-shadow: 0 1px 6px rgba(58,123,213,0.05);
+        }
+        .exp-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+        .exp-meta {
+            font-size: 0.98rem;
+            color: #888;
+            margin-bottom: 8px;
+        }
+        .exp-card ul {
+            margin: 0 0 0 18px;
+            padding: 0;
+        }
+        .edu-card {
+            background: #f3f8fd;
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 16px 20px 10px 20px;
+            margin-bottom: 12px;
+        }
+        .edu-title {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        .edu-meta {
+            font-size: 0.98rem;
+            color: #888;
+        }
+        .projects-section {
+            margin-bottom: 32px;
+        }
+        .project-card {
+            background: #f7fbff;
+            border-left: 4px solid var(--secondary);
+            border-radius: 8px;
+            margin-bottom: 16px;
+            padding: 14px 20px 10px 20px;
+            box-shadow: 0 1px 6px rgba(58,123,213,0.04);
+        }
+        .project-title {
+            font-weight: 600;
+            color: var(--secondary);
+            font-size: 1.08rem;
+        }
+        .project-desc {
+            color: #444;
+            font-size: 1rem;
+            margin: 6px 0 0 0;
+        }
+        .project-link {
+            font-size: 0.97rem;
+            color: var(--primary);
+            text-decoration: underline;
+        }
+        @media (max-width: 700px) {
+            .container {
+                padding: 18px 6vw;
+            }
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 18px;
+            }
+            .avatar {
+                width: 80px;
+                height: 80px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="avatar">
+                <img src="https://ui-avatars.com/api/?name=Bhanu+Sharma&background=3a7bd5&color=fff&size=220" alt="Bhanu Sharma">
+            </div>
+            <div class="header-info">
+                <h1>Bhanu Sharma</h1>
+                <div class="role">Software Engineer</div>
+                <div class="contact">
+                    <span>Email: <a href="mailto:abhiiloves00@gmail.com">abhiiloves00@gmail.com</a></span>
+                    <span>Phone: <a href="tel:+919466373702">+91 9466373702</a></span>
+                    <span>Location: Palwal, Haryana, India</span>
+                    <span>LinkedIn: <a href="https://linkedin.com/in/abhii" target="_blank">linkedin.com/in/abhii</a></span>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <div class="summary">
+                Innovative and detail-oriented software engineer with 3+ years of experience designing and developing scalable web applications. Adept at collaborating in agile teams, passionate about clean code, and always eager to learn new technologies and solve complex challenges.
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>REST APIs</li>
+                <li>SQL</li>
+                <li>Git &amp; GitHub</li>
+                <li>Responsive Design</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <div class="exp-card">
+                <div class="exp-title">Software Developer &mdash; Tech Solutions Inc.</div>
+                <div class="exp-meta">Jan 2021 &ndash; Present</div>
+                <ul>
+                    <li>Architected and maintained modern web applications using React and Node.js.</li>
+                    <li>Led a team of 4 in delivering a SaaS platform, improving client onboarding by 40%.</li>
+                    <li>Optimized application performance, reducing load times by 30%.</li>
+                    <li>Collaborated with cross-functional teams to deliver seamless user experiences.</li>
+                </ul>
+            </div>
+            <div class="exp-card">
+                <div class="exp-title">Web Developer Intern &mdash; Web Creators</div>
+                <div class="exp-meta">Jun 2020 &ndash; Dec 2020</div>
+                <ul>
+                    <li>Assisted in building responsive websites for small businesses.</li>
+                    <li>Implemented UI components using HTML, CSS, and JavaScript.</li>
+                    <li>Worked closely with designers to ensure pixel-perfect layouts.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="projects-section">
+                <div class="project-card">
+                    <div class="project-title">Portfolio Website</div>
+                    <div class="project-desc">Designed and developed a personal portfolio website to showcase projects and skills. Implemented responsive design and smooth navigation.</div>
+                    <a class="project-link" href="https://github.com/abhii/portfolio" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Task Manager App</div>
+                    <div class="project-desc">Built a full-stack task management application using React and Node.js, featuring user authentication and real-time updates.</div>
+                    <a class="project-link" href="https://github.com/abhii/task-manager" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="edu-card">
+                <div class="edu-title">Bachelor of Technology in Computer Science</div>
+                <div class="edu-meta">XYZ University, 2016 &ndash; 2020</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
